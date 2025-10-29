@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+body {
+  margin: 0;
+
+background-color: #222; 
+  color: #f5f5f5; /* Met le texte par défaut en blanc cassé */
+}
+
+
+/* --- 2. BANDEAU PRINCIPAL --- */
+.site-header {
+  
+  background-color: #000000;
+  padding: 10px 20px; /* Espace à l'intérieur du bandeau */
+  
+  display: flex;         /* Aligne les éléments côte à côte */
+  align-items: center;   /* Centre verticalement tout le contenu */
+  width: 100%;
+  box-sizing: border-box;
+  /* ▼ AJOUTS POUR LE FIXER EN HAUT ▼ */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Assure qu'il reste au-dessus de tout */
+  /* ▲ FIN DES AJOUTS ▲ */
+}
+
+/* --- 3. LOGO ET TITRE (à gauche) --- */
+.site-header .logo {
+  width: 60px; /* Vous pouvez ajuster cette taille */
+  height: auto;
+  margin-right: 15px; /* Espace entre le logo et le titre */
+}
+
+/* Votre titre doré */
+.site-header h1 {
+  /* Police (assurez-vous d'avoir le @import en haut de votre CSS) */
+  font-family: 'Cinzel Decorative', sans-serif; 
+  
+  /* Apparence */
+  color: #D4AF37; /* Couleur dorée */
+  font-size: 1.9rem; /* Taille du titre */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  
+  /* Position */
+  margin: 0; /* Enlève la marge par défaut du h1 */
+}
+
+/* --- 4. NAVIGATION (à droite) --- */
+
+/* Conteneur <nav> */
+.site-header nav {
+  margin-left: auto; /* !! LA MAGIE EST ICI : pousse le menu à droite !! */
+}
+
+/* Liste <ul> */
+.site-header nav ul {
+  display: flex;       /* Met les <li> à l'horizontale */
+  list-style: none;  /* Enlève les puces */
+  margin: 0;
+  padding: 0;
+}
+
+/* Liens <a> */
+.site-header nav a {
+  display: block; /* Rend toute la zone du bouton cliquable */
+  padding: 10px 15px; /* Espace intérieur pour chaque bouton */
+  
+  /* Style du texte */
+  color: #f5f5f5;         /* Blanc cassé */
+  text-decoration: none;  /* Enlève le soulignement */
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1rem;
+  
+  /* Effet de survol */
+  transition: color 0.3s ease;
+}
+
+.site-header nav a:hover {
+  color: #f7be06; /* Devient doré au survol */
+}
+
+.contenu-principal {
+  /* Définit une largeur maximale pour que le contenu 
+     ne soit pas trop large sur les grands écrans */
+  max-width: 1200px; 
+
+  /* Ces deux lignes sont la clé : 
+     elles centrent le bloc horizontalement */
+  margin-left: auto;
+  margin-right: auto;
+
+  /* (Optionnel) Ajoute un peu d'espace si le contenu 
+     colle les bords sur mobile */
+  width: 90%; 
+}
+
+.catchphrase-tcg {
+text-align: center; /* Centre le texte */
+font-family: 'Cinzel Decorative', serif; /* Applique la police fantastique */
+font-weight: 700; /* Met en gras (700 est chargé par le lien Google Font) */
+font-size: 1.6em; /* Augmente la taille pour plus d'impact */
+padding: 25px 15px; /* Ajoute de l'espace autour du texte */
+color: #C1A36A; /* Une couleur or/parchemin, très TCG */
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Ombre pour détacher le texte */
+line-height: 1.5; /* Améliore la lisibilité des lignes */
+}
+
+.atout-tcg {
+text-align: center; /* Centre le texte */
+font-family: 'Cinzel Decorative', serif; /* Applique la police fantastique */
+font-weight: 700; /* Met en gras (700 est chargé par le lien Google Font) */
+font-size: 1.6em; /* Augmente la taille pour plus d'impact */
+padding: 25px 15px; /* Ajoute de l'espace autour du texte */
+color: #C1A36A; /* Une couleur or/parchemin, très TCG */
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Ombre pour détacher le texte */
+line-height: 1.5; /* Améliore la lisibilité des lignes */ 
+}
+
+.titre-lexique {
+    text-align: center;
+    font-family: 'Cinzel Decorative', serif;
+    color: #C1A36A; /* Couleur or/parchemin */
+    font-size: 2em; /* Plus grand pour un titre de section */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    margin-bottom: 30px; /* Espace avant la liste */
+}
+
+/* Le conteneur de la liste */
+.liste-mot {
+    list-style-type: none; /* Enlève les puces (déjà fait) */
+    padding-left: 0;       /* Enlève la marge (déjà fait) */
+    max-width: 800px;      /* Limite la largeur pour une lecture facile */
+    margin: 0 auto;        /* Centre la liste sur la page */
+    padding: 0 20px;       /* Ajoute un peu d'air sur les côtés */
+}
+
+/* Chaque item du lexique */
+.liste-mot li {
+    color: #f0f0f0;     /* Blanc cassé (plus doux pour les yeux que le blanc pur) */
+    line-height: 1.6;   /* Hauteur de ligne pour une bonne lisibilité */
+    margin-bottom: 25px; /* Espace entre chaque définition */
+    padding-bottom: 25px;/* Espace avant la ligne de séparation */
+    border-bottom: 1px solid #444; /* Ligne de séparation grise foncée */
+}
+/* Enlève la ligne du dernier élément pour un look propre */
+.liste-mot li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+/* Le TERME (la balise <strong> que l'on a ajoutée) */
+.liste-mot li strong {
+    font-family: 'Cinzel Decorative', serif; /* La police "fantastique" */
+    font-weight: 700;
+    font-size: 1.3em;  /* Plus grand que la définition */
+    color: #E0C9A6;     /* Un or plus clair pour le terme */
+    letter-spacing: 1px;/* Un peu d'aération entre les lettres */
+    
+    display: block;     /* Force le terme à être sur sa propre ligne */
+    margin-bottom: 8px; /* Petit espace entre le terme et sa définition */
+}
+
+/* --- Style de la Frise Chronologique  --- */
+.timeline-container {
+  
+    text-align: center;
+    margin-top: 50px; /* Ajoute de l'espace au-dessus de ce bloc */
+    margin-bottom: 50px; /* Ajoute de l'espace en-dessous */
+}
+
+.titre-frise{
+  text-align: center;
+  font-family: 'Cinzel Decorative', serif;
+  color: #D4AF37; /* Couleur dorée */
+  font-size: 1.9rem; /* Taille du titre */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.legende-frise/* Légende de la vidéo */ {
+    font-size: 0.9em; /* Texte légèrement plus petit */
+    color: #777; /* Couleur grise */
+    font-style: italic;
+    margin-top: 10px;
+    text-align: center; /* S'assure que la légende est centrée */
+}
+
+.legende-video/* Légende de la vidéo */ {
+    font-size: 0.9em; /* Texte légèrement plus petit */
+    color: #777; /* Couleur grise */
+    font-style: italic;
+    margin-top: 10px;
+    text-align: center; /* S'assure que la légende est centrée */
+}
+
+
+
+/* --- Styles généraux pour la page --- */
+body {
+    background-color: #1a1a1a; /* Fond très sombre, comme sur votre image */
+    color: #e0e0e0;           /* Texte gris clair pour un bon contraste */
+    font-family: Arial, sans-serif; /* Police nette et facile à lire */
+    margin: 0;
+    padding: 20px;            /* Un peu d'aération sur les côtés */
+}
+
+
+
+.sous-titre-regles{
+color: #D4AF37;
+}
+
+.TCG-regles{
+   color: #D4AF37;
+}
+
+.magic-regles{
+   color: #D4AF37;
+}
+
+.pokemon-regles{
+   color: #D4AF37;
+}
+
+.yu-regles{
+   color: #D4AF37;
+}
+
+
+
+
+
+
+#regles h4 {
+    margin-top: 40px;   /* Ajoute un espace net avant chaque section de jeu */
+    padding-bottom: 10px; /* Espace sous le titre */
+    border-bottom: 2px solid #444; /* Ligne de séparation discrète */
+}
+
+.titre-regles{
+  text-align: center;
+  font-family: 'Cinzel Decorative', serif;
+  color: #D4AF37; /* Couleur dorée */
+  font-size: 1.9rem; /* Taille du titre */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* --- Styles pour les paragraphes --- */
+#regles p {
+    line-height: 1.6;   /* Hauteur de ligne pour une meilleure lisibilité */
+    font-size: 16px;
+    text-align: justify; /* Justifie le texte pour un look "propre" */
+}
+
+/* --- Styles pour les vidéos YouTube --- */
+#regles iframe {
+    /* Retirer le display: block et margin: auto de l'iframe directement */
+    /* width: 100%; */ /* Ajusté par les règles ci-dessous pour le conteneur */
+    max-width: 560px;    /* Mais ne dépassera pas sa taille d'origine */
+    aspect-ratio: 16 / 9;   /* Garde le format 16:9 (widescreen) */
+    height: auto;           /* La hauteur s'ajustera automatiquement */
+    
+    border: none;           /* Enlève la bordure (corrige le "rameborder") */
+    border-radius: 8px;     /* Coins arrondis pour la vidéo */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Ombre pour la faire ressortir */
+
+    /* Espacement entre la vidéo et le texte/autres éléments */
+    margin: 0 20px; /* Espacement horizontal, géré par le flex-basis ci-dessous */
+}
+
+/* Styles pour alterner les positions des vidéos */
+.video-left .video-wrapper {
+    margin-right: auto; /* Pousse l'iframe vers la gauche */
+}
+
+.video-right .video-wrapper {
+    margin-left: auto; /* Pousse l'iframe vers la droite */
+}
+
+/* Wrapper pour donner une largeur fixe aux vidéos et gérer le flottement */
+.video-wrapper {
+    width: 100%;
+    max-width: 560px; /* Limite la largeur de l'iframe à 560px */
+    flex-shrink: 0; /* Empêche l'iframe de rétrécir */
+}
+
+
+/* Pour les petits écrans, on re-centre les vidéos */
+@media (max-width: 768px) {
+    .video-container {
+        flex-direction: column; /* Empile les vidéos verticalement */
+        align-items: center; /* Centre les vidéos */
+    }
+
+    .video-left .video-wrapper,
+    .video-right .video-wrapper {
+        margin: 0; /* Supprime les marges automatiques */
+    }
+}
+.titre-lexique{
+    text-align: center;
+    font-family: 'Cinzel Decorative', serif;
+    color: #C1A36A; /* Couleur or/parchemin */
+    font-size: 2em; /* Plus grand pour un titre de section */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    margin-bottom: 30px; /* Espace avant la liste */
+}
+
+
+
+/* Conteneur principal de la compétition */
+#compet {
+    max-width: 900px; /* Limite la largeur pour une meilleure lisibilité */
+    margin: 20px auto; /* Centre le bloc horizontalement et ajoute de la marge en haut/bas */
+    padding: 25px 40px; /* Espace intérieur (plus sur les côtés) */
+    
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); /* Ombre douce pour un effet de "carte" */
+    text-align: center; /* Centre tout le texte par défaut */
+}
+
+/* Titre principal */
+#compet h2 {
+  text-align: center;
+  font-family: 'Cinzel Decorative', serif;
+  color: #D4AF37; /* Couleur dorée */
+  font-size: 1.9rem; /* Taille du titre */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* Sous-titres (Phases) */
+#compet h3 {
+    color: #00695c; /* Couleur d'accentuation (vert-bleu) */
+    margin-top: 35px; /* Espace au-dessus de chaque nouvelle section */
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e0e0e0; /* Ligne de séparation légère */
+    padding-bottom: 8px;
+    display: inline-block; /* Permet au centrage de fonctionner avec la bordure */
+}
+
+/* Listes à puces */
+#compet ul {
+    padding-left: 0; /* Supprime le retrait par défaut */
+    list-style-type: none; /* On va créer nos propres puces */
+    text-align: left; /* !!! ESSENTIEL : Aligne le texte des listes à gauche pour la lisibilité */
+    
+    /* Centre le bloc de liste lui-même */
+    max-width: 650px; /* Limite la largeur de la liste */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Éléments de la liste */
+#compet li {
+    position: relative; /* Requis pour la puce personnalisée */
+    padding-left: 25px; /* Espace pour la puce */
+    margin-bottom: 12px; /* Espace entre les éléments */
+    line-height: 1.6; /* Hauteur de ligne pour une lecture facile */
+}
+
+/* Puce personnalisée (plus propre) */
+#compet li::before {
+    content: '•'; /* Caractère de la puce */
+    color: #00695c; /* Couleur de la puce (idem que h3) */
+    font-weight: bold;
+    font-size: 1.2em;
+    position: absolute; /* Positionnement précis */
+    left: 0;
+    top: 0px; /* Ajustement vertical */
+}
+
+/* Vidéo YouTube responsive */
+#compet iframe {
+    max-width: 100%; /* Prend toute la largeur disponible */
+    border: none; /* Supprime la bordure par défaut */
+    border-radius: 8px; /* Coins arrondis pour la vidéo */
+    margin-top: 25px; /* Espace au-dessus de la vidéo */
+    
+    /* Maintient le ratio 16:9 */
+    aspect-ratio: 16 / 9;
+    height: auto; /* Hauteur automatique basée sur la largeur et l'aspect-ratio */
+
+    /* S'assure que le bloc est centré */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Légende de la vidéo */
+#compet figcaption {
+    font-size: 0.9em; /* Texte légèrement plus petit */
+    color: #777; /* Couleur grise */
+    font-style: italic;
+    margin-top: 10px;
+    text-align: center; /* S'assure que la légende est centrée */
+}
+
+.video-principale-legende/* Légende de la vidéo */ {
+    font-size: 0.9em; /* Texte légèrement plus petit */
+    color: #777; /* Couleur grise */
+    font-style: italic;
+    margin-top: 10px;
+    text-align: center; /* S'assure que la légende est centrée */
+}
+
+.palmares2{
+  text-align: center;
+  font-family: 'Cinzel Decorative', serif;
+  color: #D4AF37; /* Couleur dorée */
+  font-size: 1.9rem; /* Taille du titre */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.description-palmares{
+text-align: center;
+  
+  color: #D4AF37; /* Couleur dorée */
+  font-size: 1.9rem; /* Taille du titre */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+
+  
+
+
+
+
+
+

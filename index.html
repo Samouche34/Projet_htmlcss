@@ -4,63 +4,381 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <header>
-        <h1> Trading Cards Game 2025  </h1> 
-        <img src="images/TCG-2.png" alt="Logo Trading Card Game">
-        <h2> Amateur, débutant ou moldue bienvenue ! </h2>
-        <h3> Trading Cards Games 2025 est un site communautaire  </h3>
-        
-    </header>
-    <nav>
-        <ul>
-            <li><a href="acceuil.html">Acceuil</a></li>
-            <li><a href="règles.html ">Les règles</a></li>
-            <li><a href="palmarès.html">Palmarès</a></li>
-        </ul>
-    </nav>
-    <div>
-        <img src="images/TCG-1.jpg" alt="GameSpot Archive pro tour 2016">
-        <figcaption>
-        Sydney, en Australie, a été l'hôte du Pro Tour 2016 de Magic: The Gathering avec une dotation de 25 000 $.
-        </figcaption>
-    </div>
-    <div>
-        <h2> Le Trading Card game, de ses origines fascinantes à son charme moderne.</h2>
-        <p>  Bienvenue dans l'univers passionnant des TCG (ou JCC pour "Jeu de Cartes à Collectionner") ! C'est un hobby qui combine la stratégie d'un jeu de duel et le plaisir de la collection. Pour débuter, le plus simple est souvent de choisir un Starter, un paquet conçu pour apprendre à jouer immédiatement. Une fois les règles comprises, le cœur du jeu commence : vous ouvrez des Boosters (des paquets de cartes aléatoires) dans l'espoir de trouver cette carte Holo (brillante) tant convoitée. Votre objectif est de rassembler vos cartes préférées pour construire le Deck (votre paquet de jeu personnalisé) le plus efficace. Au fil du temps, vous découvrirez la "Méta", c'est-à-dire les stratégies et les Decks qui dominent la compétition, pour affiner votre propre style de jeu.</p>
-        <h2> Un Sport, Mille Univers : La Richesse des Trading Card Games </h2>
-        <p>  L'un des plus grands atouts des TCG est la diversité incroyable des mondes proposés. Il n'existe pas un seul univers, mais des dizaines : certains inspirés de mangas célèbres, d'autres de mondes fantastiques médiévaux, ou encore d'aventures spatiales. Que vous souhaitiez capturer des monstres, lancer des sorts puissants ou piloter des robots géants, il y a forcément un jeu pour vous. C'est une invitation à choisir l'univers qui vous parle le plus, celui dans lequel vous avez vraiment envie de vivre l'expérience du Duel et de commencer votre collection.</p>
-        <iframe 
-    width="560" 
-    height="315" 
-    src="https://www.youtube.com/embed/43Ia_XTz5-0" 
-    title="YouTube video player" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    allowfullscreen>
-</iframe>
+    <header id="header"> 
+        <header class="site-header">
+        <img src="images/TCG-2.png" alt="Logo Trading Card Game" class="logo">
+        <h1> Trading Cards Game 2025   </h1> 
     
-    </div>
-    <div>
-        <h2> Le Lexique Essentiel du Débutant ! </h2>
+    
+        <nav>
             <ul>
-                <li>TCG / JCC Acronyme pour "Trading Card Game" ou "Jeu de Cartes à Collectionner". C'est un jeu où les joueurs s'affrontent avec des cartes qu'ils collectionnent et échangent.</li>
-                <li>Deck Le paquet de cartes (généralement 40 ou 60 cartes) qu'un joueur assemble lui-même pour affronter un adversaire. C'est le cœur de votre stratégie.</li>
-                <li>Starter (ou Deck de Démarrage) Un paquet préconstruit, vendu prêt à jouer. C'est l'achat idéal pour les débutants qui veulent apprendre les règles sans avoir à construire leur propre deck.</li>
-                <li>Booster (ou Paquet de recharge) Un paquet scellé contenant un petit nombre de cartes aléatoires (souvent 8 à 15). C'est le moyen principal d'agrandir sa collection et de trouver de nouvelles cartes pour votre deck.</li>
-                <li>Holo / Foil (ou Carte Brillante) Une carte qui possède un effet visuel brillant ou holographique. Elles sont généralement plus rares et plus recherchées par les collectionneurs.</li>
-                <li>Méta (ou Méta-game) Terme désignant l'environnement de jeu à un instant T. Il représente les types de decks, les stratégies et les cartes les plus populaires ou les plus efficaces en compétition. Comprendre la Méta permet d'anticiper ce que vos adversaires joueront.</li>
-        
+                <li><a href="#header">Accueil</a></li> 
+                <li><a href="#regles">Règles des différents univers</a></li>
+                <li><a href="#compet">Fonctionnement d'une compétition </a></li>
+                <li><a href="#palmares">Palmarès</a></li>
             </ul>
+        </nav>
+    </header>
+    <div>
+        <main class="contenu-principal">
+        <h3 class="catchphrase-tcg">   Découvrez les TCG : le hobby qui mêle stratégie de duel et plaisir de la collection. Apprenez vite avec un Starter, trouvez des cartes rares (Holo) dans les Boosters et construisez le Deck parfait pour dominer la compétition.</h3>
+        <img src="images/TCG-1.jpg" alt="GameSpot Archive pro tour 2016">
+            <figcaption div class="video-principale-legende"> Sydney, en Australie, a été l'hôte du Pro Tour 2016 de Magic: The Gathering avec une dotation de 25 000 $. Source : Gamespot Archive Pro Tour 2016
+            </figcaption>
+    </div>
+    <div>
+            
+            
+            
+            <h3 class="atout-tcg"> L'un des plus grands atouts des TCG est la diversité incroyable des mondes proposés. Il n'existe pas un seul univers, mais des dizaines : certains inspirés de mangas célèbres, d'autres de mondes fantastiques médiévaux, ou encore d'aventures spatiales. Que vous souhaitiez capturer des monstres, lancer des sorts puissants ou piloter des robots géants, il y a forcément un jeu pour vous. C'est une invitation à choisir l'univers qui vous parle le plus, celui dans lequel vous avez vraiment envie de vivre l'expérience du Duel et de commencer votre collection </h2>
+                
+            
+
+                
+
+<figure style="display: flex; flex-direction: column; align-items: center;">
+
+    <iframe 
+        width="750" 
+        height="500" 
+        src="https://www.youtube.com/embed/43la_XTz5-0?si=1oYDAOAN-xFXZYVW" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+    </iframe>
+  
+    <figcaption div class = "legende-video"> Vidéo explicative d'un des TCG les plus populaires : Magic. Source : Youtube Arkeo Toys
+    </figcaption>
+
+</figure>
+    
+    </div>
+    <div>
+    <h2 class="titre-lexique"> Le Lexique Essentiel du Débutant ! </h2>
+        <ul class="liste-mot">
+            <li><strong>TCG / JCC :</strong> Acronyme pour "Trading Card Game" ou "Jeu de Cartes à Collectionner". C'est un jeu où les joueurs s'affrontent avec des cartes qu'ils collectionnent et échangent.</li>
+            <li><strong>Deck :</strong> Le paquet de cartes (généralement 40 ou 60 cartes) qu'un joueur assemble lui-même pour affronter un adversaire. C'est le cœur de votre stratégie.</li>
+            <li><strong>Starter :</strong> (ou Deck de Démarrage) Un paquet préconstruit, vendu prêt à jouer. C'est l'achat idéal pour les débutants qui veulent apprendre les règles sans avoir à construire leur propre deck.</li>
+            <li><strong>Booster :</strong> (ou Paquet de recharge) Un paquet scellé contenant un petit nombre de cartes aléatoires (souvent 8 à 15). C'est le moyen principal d'agrandir sa collection et de trouver de nouvelles cartes pour votre deck.</li>
+            <li><strong>Holo / Foil (ou Carte Brillante) :</strong> Une carte qui possède un effet visuel brillant ou holographique. Elles sont généralement plus rares et plus recherchées par les collectionneurs.</li>
+            <li><strong>Méta (ou Méta-game) :</strong> Terme désignant l'environnement de jeu à un instant T. Il représente les types de decks, les stratégies et les cartes les plus populaires ou les plus efficaces en compétition. Comprendre la Méta permet d'anticiper ce que vos adversaires joueront.</li>
+        </ul>
+</div>
+
+    <div class="timeline-container">
+        <h2 class="titre-frise">L'Histoire des TCG (Cliquez sur un jeu !)</h2>
+            <img src="images/TCG-schéma.png" alt="Mermaid Histoire des TCG pour débutants" usemap="#tcg-map">
+    
+    <map name="tcg-map">
+        <area shape="rect" 
+            href="https://magic.wizards.com/" 
+            title="Magic: The Gathering" 
+            coords="35,160,115,200">    
+        <area shape="rect" 
+            href="https://tcg.pokemon.com/" 
+            title="Pokémon TCG" 
+            coords="275,160,115,200">
+    
+        <area shape="rect" 
+            href="https://www.yugioh-card.com/" 
+            title="Yu-Gi-Oh!" 
+            coords="330,160,115,200">
+        <area shape="rect"
+            href="https://en.cf-vanguard.com/"
+            titre ="Vanguard"
+            coords="450,160,115,200">
+        <area shape="rect"  
+            href="https://hearthstone.blizzard.com/" 
+            title="Hearthstone"
+            coords="550,160,115,200">
+        <area shape="rect"  
+            href="https://www.dbs-cardgame.com/" 
+            title="Dragon Ball Super Card Game"
+            coords="650,160,115,200">
+        <area shape="rect"  
+            href="https://en.onepiece-cardgame.com/" 
+            title="One Piece Card Game"
+            coords="750,160,115,200">
+        <area shape="rect" 
+            href="https://www.marvelsnap.com/" 
+            title="Marvel Snap"
+            coords="875,160,115,200">
+        <area shape="rect" 
+            href="https://www.disneylorcana.com/" 
+            title="Disney Lorcana"
+            coords="1000,160,115,200"> 
+        
+            
+        <figcaption div class = "legende-frise">Frise chronologique du TCG de 1993 à 2023. Fait avec Mermaid Live Editor</figcaption>
     </div>
     
+    <div id="regles">
+        <h2 div class="titre-regles"> Règles simplifiées </h2>
+            <h3 div class="sous-titre-regles"> Petit guide global du TCG et des jeux les plus populaires </h3>
+                <h4 div class ="TCG-regles"> Le TCG </h4>
+                    <p> Les règles des jeux de cartes à collectionner (TCG) sont fondées sur un ensemble de principes communs, bien que chaque jeu ait ses spécificités. Un deck, qui est le paquet de cartes utilisé pour jouer, doit généralement contenir entre 45 et 60 cartes, avec une taille standard souvent fixée à 60 cartes pour faciliter la lecture et le jeu.
+                        Chaque deck ne peut pas contenir plus de quatre exemplaires d'une même carte. Les joueurs commencent la partie en piochant 7 cartes de leur deck et doivent s'assurer d'avoir au moins une créateure de base dans leur main pour commencer.
+                        Si ce n'est pas le cas, ils doivent re-piocher. Le déroulement d'une partie se divise généralement en plusieurs phases. Chaque tour commence par une phase de pioche, où le joueur pioche une carte du dessus de son deck, sauf lors de son premier tour.
+                        Cette phase est suivie d'une phase principale où le joueur peut effectuer diverses actions, comme jouer des cartes, utiliser des capacités ou attaquer soit une carte ( chaque cartes possèdes des points de vies ) soit le héro ( si le héro ne possède plus de point de vie, il perd)
+                        Les cartes jouées sont généralement placées en jeu, et certaines peuvent être épuisées pour activer leurs effets.
+                    </p>
+                <h4 div class ="magic-regles"> Magic : The Gathering </h4>
+                <div class="video-container video-left">
+                <div class="video-wrapper">
+                    <p> Magic : The Gathering est un jeu de cartes stratégique destiné aux joueurs de 13 ans et plus. Chaque participant incarne un magicien, appelé planeswalker. Au début de la partie, chaque joueur dispose de 20 points de vie, et l'objectif est de réduire ceux de l'adversaire à zéro.
+                        Pour y parvenir, les joueurs piochent à tour de rôle des cartes de leur deck, qui se compose de 60 cartes mélangées au préalable. Ils peuvent alors engager certaines cartes pour invoquer des créatures, lancer des sorts ou utiliser divers équipements, afin d'attaquer l'adversaire ou de se défendre.
+                    </p>
+                        <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/JSsNMCahcGo?si=YpqWM6AUmiV_V13P" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                        </div>
+                        </div>
 
+                    
+                    </p>
+                <h4 div class="pokemon-regles"> Pokemon </h4>
+                <div class="video-container video-right">
+                    <div class="video-wrapper">
+                        
 
+                    <p>Dans le JCC Pokémon, vos Pokémon affrontent les Pokémon de votre adversaire.
+                        La première personne qui récupère toutes ses cartes Récompense gagne. Vous pouvez
+                        également remporter la partie si votre adversaire n'a plus aucun Pokémon en jeu, ou s'il
+                        ne lui reste aucune carte à piocher au début de son tour.
+                    </p>
+                    
+                        <iframe width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/Rg-O_aBJJ6w?si=dZBcZcGxAF7eu-bR" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                        </div>
+                        </div>
+                <h4 div class="yu-regles"> Yu-Gi-Oh ! </h4>
+                <div class="video-container video-left">
+                <div class="video-wrapper">
+                    <p>Avec le JEU DE CARTES À JOUER Yu-Gi-Oh!, vous allez participer à
+                        un fabuleux jeu de cartes basé sur la série de mangas et de dessins
+                        animés à succès.
+                        Deux joueurs se livrent un Duel en utilisant une grande variété de
+                        Cartes Monstre, Magie et Piège pour en sortir vainqueur et être le
+                        premier à réduire les LP (Life Points) de l'adversaire à 0.
+                        Tout ce dont vous avez besoin pour commencer à jouer est dans
+                        ce Deck, mais il existe des milliers de cartes parmi lesquelles
+                        choisir, ce qui vous permettra, en collectionnant les cartes
+                        supplémentaires des Pochettes-Recharges (Booster Packs), de
+                        personnaliser votre Deck et d'augmenter vos chances de gagner !
+                    </p>
+                        <iframe width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/uZb38VqM-bM?si=tgaqq322Af8I73pX" 
+                            title="YouTube video player" 
+                            rameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                
+    </div>
+
+    <div id="compet">
+        <h2> Magic : Fonctionnement d'une compétition classique </h2>
+        <h3> 1. Préparation et Format </h3>
+            <ul>
+                <li>Inscription au tournois 1 semaine avant par paiement en ligne</li>
+                <li>Format en round suisse </li>
+                <li>Deck ouvert: les participants viennent avec leur propre deck de 60 cartes </li>
+                <li>Deck fermé: les participants construisent un deck de 40 cartes sur place à partir de boosters fournis </li>
+            </ul>
         
+        <h3> 2. Phase 1 : les roundes suisses</h3>
+        
+            <ul>
+                <li>Vous êtes appairé contre un adversaire. Pour la Ronde 1, c'est aléatoire. Ensuite, vous jouez contre des joueurs ayant un score (points) similaire au vôtre.</li>
+                <li>Vous jouez un "match" en 2 parties ("manches") gagnantes (Best-of-Three).</li>
+                <li>Chaque ronde dure environ 50 minutes.</li>
+                <li>Victoire = 3 points</li>
+                <li>Match Nul = 1 point</li>
+                <li>Défaite = 0 point</li>
+            </ul>
+        <h3> 3. Phase 2 : Sélection</h3>
+            <ul>
+                <li>À la fin des rondes suisses, un classement général est établi en fonction des points accumulés (et de critères de départage en cas d'égalité).</li>
+                <li>Les meilleurs joueurs du classement (généralement le Top 8 ou le Top 4) sont qualifiés pour la phase finale. Les autres joueurs sont éliminés.</li>
+            </ul>
+        <h3> 4. Phase 3 : L'Élimination Directe</h3>
+            <ul>
+                <li>Les joueurs du Top 8 s'affrontent dans un arbre à élimination directe (Quarts de finale, Demi-finales, Finale).</li>
+                <li>Les matchs sont toujours en 2 parties gagnantes.</li>
+                <li>Si vous gagnez, vous avancez. Si vous perdez, vous êtes éliminé du tournoi. Le vainqueur de la finale remporte la compétition.</li>
+            </ul>
+            <iframe width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/3crdirj9quM?si=kKFFoyr6pwSewrgx" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+            <figcaption> Documentaire américain d'une des compétitions les plus virales du TGC : Le Pro Tour Source : Youtube </figcaption>
+    </div>
+    
+    <div id="palmares">
+        <h2 div class="palmares2">Palmarès du TGC : Le Pro Tour </h2>
+            <p div class="description-palmares">le Pro Tour est le sommet de la compétition Magic, un circuit global qui fait étape aux États-Unis et pour lequel les joueurs américains se qualifient via leur propre championnat national. </p>
+            <div>
+        <h4> Tableaux des scores antérieurs </h4>
+        
+        <div class="systeme-onglets">
+
+            <input type="radio" name="onglets-css" id="onglet-mondial" class="onglet-input" checked>
+            <label for="onglet-mondial" class="onglet-label">Palmarès Mondial</label>
+
+            <input type="radio" name="onglets-css" id="onglet-national" class="onglet-input">
+            <label for="onglet-national" class="onglet-label">Palmarès National</label>
+
+            <div class="panneau-contenu" id="contenu-mondial">
+                <table>
+                    <tr>
+                        <th>Edition</th>
+                        <th>Lieu </th>
+                        <th>Or</th>
+                        <th>Argent</th>
+                        <th>Bronze</th>
+                    </tr>
+                    <tr>
+                        <td>Pro Tour 2025</td>
+                        <td>Chicago</td>
+                        <td>Ken Yukuhiro</td>
+                        <td>Ian Robb</td>
+                        <td>Yuchen Liu</td>
+                    </tr>
+                    <tr>
+                        <td>Pro Tour 2024</td>
+                        <td>Amsterdam</td>
+                        <td>Simon Nielsen</td>
+                        <td>Sam Pardee</td>
+                        <td>Eli Kassis</td>
+                    </tr>
+                    <tr>
+                        <td>Pro Tour 2023</td>
+                        <td>Barcelone</td>
+                        <td>Jake Beardsley</td>
+                        <td>Christian Calcano</td>
+                        <td>Simon Nielsen</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="panneau-contenu" id="contenu-national">
+                <table>
+                    <tr>
+                        <th>Edition</th>
+                        <th>Lieu </th>
+                        <th>1-8 </th>
+                        <th>8-16</th>
+                        <th>16-52</th>
+                    </tr>
+                    <tr>
+                        <td>Pro Tour 2025</td>
+                        <td>Chicago</td>
+                        <td>8-Jean-Emmanuel Depraz </td>
+                        <td>16-Gabriel Nassif</td>
+                        <td>24-Thierry Ramboa</td>
+                    </tr>
+                    <tr>
+                        <td>Pro Tour 2024</td>
+                        <td>Amsterdam</td>
+                        <td>5-Julien Henry</td>
+                        <td>17-Matthieu Tassa</td>
+                        <td>24-Elliot Boussaud</td>
+                    </tr>
+                    <tr>
+                        <td>Pro Tour 2023</td>
+                        <td>Barcelone</td>
+                        <td>5-Guillaume Wafo-Tapa</td>
+                        <td>12-Jean-Emmanuel Depraz</td>
+                        <td>52-Gabriel Nassif</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
 
 
-    
-    
+    <style>
+        /* Votre style de base pour les tables */
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse; 
+        }
+        th, td {
+            padding: 8px;
+        }
+
+        /* --- Voici la logique des onglets --- */
+
+        /* 1. Cacher les vrais boutons radio */
+        .systeme-onglets .onglet-input {
+            display: none;
+        }
+
+        /* 2. Cacher les deux panneaux de contenu par défaut */
+        .systeme-onglets .panneau-contenu {
+            display: none;
+        }
+
+        /* 3. Donner aux labels l'apparence de liens/onglets */
+        .systeme-onglets .onglet-label {
+            display: inline-block; /* Comportement similaire à vos <li> */
+            padding: 5px 10px;
+            cursor: pointer;
+            text-decoration: underline;
+            color: blue; /* Apparence de lien */
+        }
+
+        /* 4. LA MAGIE : 
+           Utilise le sélecteur "frère adjacent" (+) ou "frère général" (~)
+           Quand l'input #onglet-mondial est :checked (coché),
+           on cible son "frère" #contenu-mondial et on l'affiche.
+        */
+        #onglet-mondial:checked ~ #contenu-mondial {
+            display: block; /* Affiche le panneau mondial */
+        }
+
+        #onglet-national:checked ~ #contenu-national {
+            display: block; /* Affiche le panneau national */
+        }
+        
+        /* 5. (Optionnel) Mettre en surbrillance l'onglet actif */
+        .onglet-input:checked + .onglet-label {
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+
 </body>
 </html>
