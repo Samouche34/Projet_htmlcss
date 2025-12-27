@@ -432,6 +432,64 @@ text-align: center;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
+#section-inscription {
+    width: 80%;               /* Prend 80% de la largeur de l'écran */
+    max-width: 600px;         /* Mais ne dépasse jamais 600px */
+    margin: 50px auto;        /* Centré horizontalement */
+    padding: 30px;
+    background-color: #2c2c2c; /* Fond gris foncé */
+    border: 2px solid #D4AF37; /* Bordure dorée (ton thème) */
+    border-radius: 10px;       /* Coins arrondis */
+    color: white;              /* Texte en blanc */
+    font-family: Arial, sans-serif;
+}
+.groupe-formulaire {
+    margin-bottom: 20px; /* Espace entre chaque question */
+}
+
+/* Cible tous les champs de texte, email, password et listes */
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;             /* Prend toute la largeur disponible */
+    padding: 10px;           /* Espace à l'intérieur du champ */
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+    box-sizing: border-box;  /* Empêche le padding d'agrandir la largeur totale */
+}
+
+.erreur {
+    color: #ff6b6b;       /* Rouge clair pour bien voir l'erreur sur fond noir */
+    font-size: 0.9em;     /* Un peu plus petit que le texte normal */
+    font-weight: bold;
+    margin-top: 5px;
+    display: none;        /* CACHÉ par défaut ! */
+}
+.liste-sports label {
+    display: inline-block; /* Permet de les mettre côte à côte */
+    margin-right: 15px;    /* Espace entre chaque sport */
+    margin-bottom: 10px;   /* Espace si ça passe à la ligne */
+    cursor: pointer;       /* Petite main au survol */
+}
+
+#bouton-envoi {
+    width: 100%;
+    padding: 12px;
+    background-color: #D4AF37; /* Doré */
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s; /* Animation douce au survol */
+}
+
+#bouton-envoi:hover {
+    background-color: #F7BE06; /* Plus clair au survol */
+}
 
   
 

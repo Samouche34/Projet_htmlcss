@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - TCG 2025</title>
+    
+    <link rel="stylesheet" href="styles/index.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    
+    <section id="section-inscription">
+    <nav>
+    <a href="index.html">⬅ Retour à l'accueil</a>
+    <form id="formulaire-inscription" novalidate></form>
+    <div class="groupe-formulaire">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom">
+            <span class="erreur" id="erreur-nom"></span>
+        </div>
+
+        <div class="groupe-formulaire">
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" placeholder="Votre prénom">
+            <span class="erreur" id="erreur-prenom"></span>
+        </div>
+        <div class="groupe-formulaire">
+            <p>Civilité :</p>
+            <div class="choix-civilite">
+                <input type="radio" id="madame" name="civilite" value="Mme">
+                <label for="madame">Mme</label>
+            
+                <input type="radio" id="monsieur" name="civilite" value="M.">
+                <label for="monsieur">M.</label>
+            </div>
+            <span class="erreur" id="erreur-civilite"></span>
+        </div>
+        <div class="groupe-formulaire">
+            <label for="nationalite">Nationalité :</label>
+            <select id="nationalite" name="nationalite">
+                <option value="">-- Aucun --</option> <option value="france">France</option>
+                <option value="belgique">Belgique</option>
+                <option value="suisse">Suisse</option>
+                <option value="canada">Canada</option>
+                
+            </select>
+            <span class="erreur" id="erreur-nationalite"></span>
+        </div>
+        <div class="groupe-formulaire">
+            <label for="email">Email :</label>
+            <input type="text" id="email" name="email">
+            <span class="erreur" id="erreur-email"></span>
+        </div>
+
+        <div class="groupe-formulaire">
+            <label for="motdepasse">Mot de passe :</label>
+            <input type="password" id="motdepasse" name="motdepasse">
+            <small>Info : 8 caractères, 1 Maj, 1 min, 1 chiffre, 1 spécial.</small>
+            <span class="erreur" id="erreur-motdepasse"></span>
+        </div>
+
+        <div class="groupe-formulaire">
+            <label for="confirmation">Confirmer le mot de passe :</label>
+            <input type="password" id="confirmation" name="confirmation">
+            <span class="erreur" id="erreur-confirmation"></span>
+        </div>
+        <div class="groupe-formulaire">
+            <p>Centres d'intérêt (2 minimum) :</p>
+            <div class="liste-sports">
+                <label><input type="checkbox" name="sports" value="judo"> Judo</label>
+                <label><input type="checkbox" name="sports" value="tennis"> Tennis</label>
+                <label><input type="checkbox" name="sports" value="natation"> Natation</label>
+                <label><input type="checkbox" name="sports" value="escrime"> Escrime</label>
+                
+                <br> <label><input type="checkbox" name="sports" value="foot"> Football</label>
+                <label><input type="checkbox" name="sports" value="basket"> Basket</label>
+                <label><input type="checkbox" name="sports" value="volley"> Volley</label>
+                <label><input type="checkbox" name="sports" value="hand"> Hand</label>
+            </div>
+            <span class="erreur" id="erreur-sports"></span>
+        </div>
+
+        <button type="submit" id="bouton-envoi">Valider l'inscription</button>
+
+    </form>
+</section>
+        
+</nav>
+<script src="js/main.js"></script>
+</body>
+</html>
